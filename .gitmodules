@@ -1,0 +1,13 @@
+[submodule "external/folly"]
+	path = external/folly
+	url = https://github.com/facebook/folly.git
+	branch = v2021.11.29.00
+[submodule "external/fizz"]
+	path = external/fizz
+	url = https://github.com/facebookincubator/fizz.git
+[submodule "external/wangle"]
+	path = external/wangle
+	url = https://github.com/facebook/wangle.git
+[submodule "external/fbthrift"]
+	path = external/fbthrift
+	url = https://github.com/facebook/fbthrift.git
