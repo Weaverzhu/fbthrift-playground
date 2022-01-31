@@ -13,4 +13,11 @@ tested in debian 11 (bullseye)
 
 you can also look at `./scripts/update_fb_deps.sh` to change fbthrift and its dependencies' branch, default is tag `v2022.01.03.00`
 
-# 
+# Use docker & remote-containers to analyze this issue
+
+```sh
+docker build -t playground . --network=host
+docker run -td --network=host --cap-add=SYS_PTRACE --security-opt seccomp=unconfined playground bash # to enable gdb in docker some options are added
+```
+
+then attach to the container using `Remote-container` extension, and skip `Step 1` from `Steps to reproduce cpptools-srv process crash`
